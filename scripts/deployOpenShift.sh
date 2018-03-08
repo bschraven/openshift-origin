@@ -442,6 +442,7 @@ openshift_template_service_broker_namespaces=['openshift']
 openshift_use_openshift_sdn=true
 
 # Setup metrics
+openshift_metrics_image_version=v3.7
 openshift_metrics_install_metrics=false
 #openshift_metrics_cassandra_storage_type=dynamic
 openshift_metrics_start_cluster=true
@@ -682,13 +683,13 @@ fi
 echo $(date) "- Deleting post installation files"
 
 
-rm /home/${SUDOUSER}/addocpuser.yml
-rm /home/${SUDOUSER}/assignclusteradminrights.yml
-rm /home/${SUDOUSER}/dockerregistry.yml
-rm /home/${SUDOUSER}/setup-azure-master.yml
-rm /home/${SUDOUSER}/setup-azure-node-master.yml
-rm /home/${SUDOUSER}/setup-azure-node.yml
-rm /home/${SUDOUSER}/masternonschedulable.yml
-rm /home/${SUDOUSER}/reboot-nodes.yml
+#rm /home/${SUDOUSER}/addocpuser.yml
+#rm /home/${SUDOUSER}/assignclusteradminrights.yml
+#rm /home/${SUDOUSER}/dockerregistry.yml
+#rm /home/${SUDOUSER}/setup-azure-master.yml
+#rm /home/${SUDOUSER}/setup-azure-node-master.yml
+#rm /home/${SUDOUSER}/setup-azure-node.yml
+#rm /home/${SUDOUSER}/masternonschedulable.yml
+#rm /home/${SUDOUSER}/reboot-nodes.yml
 
 echo $(date) " - Script complete"
