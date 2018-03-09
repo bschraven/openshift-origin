@@ -682,7 +682,7 @@ fi
 # Delete postinstall files
 echo $(date) "- Deleting post installation files"
 
-export >~/export
+export > /home/${SUDOUSER}/export
 
 #rm /home/${SUDOUSER}/addocpuser.yml
 #rm /home/${SUDOUSER}/assignclusteradminrights.yml
